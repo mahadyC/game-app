@@ -1,0 +1,27 @@
+{
+    "host": "localhost",
+    "port": 3306,
+    "admin": "controller",
+    "adminpassword": "secret",
+    "user": "ava",
+    "userpassword": "chDKaWlq",
+    "dropUser": true,
+    "debug": true,
+    "database": "gamedb",
+    "tables": [
+        {
+            "tableName": "game",
+            "columns": [
+                "number integer not null primary key",
+                "name varchar(36) not null",
+                "year integer not null",
+                "rating varchar(5) not null",
+                "genre varchar(25) not null"
+            ],
+            "data": [
+                [1, "Street Fighter", 1997, "*****", "Action"],
+                [2, "Super Mario", 2000, "****", "Adventure"]
+            ]
+        }
+    ]
+}

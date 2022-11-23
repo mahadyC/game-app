@@ -1,0 +1,17 @@
+{
+    "getAll": ["select number, name, year, rating, genre from game"],
+    "get": [
+        "select number,name,year,rating,genre from game",
+        "where number=?"
+    ],
+    "insert": [
+        "insert into game (number,name,year,rating,genre)",
+        "values(?,?,?,?,?)"
+    ],
+    "update": [
+        "update game set name=?, year=?, rating=?, genre=?",
+        "where number=?"
+    ],
+    "remove": ["delete from game where number=?"],
+    "primaryKey": "number"
+}
